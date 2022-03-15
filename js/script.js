@@ -179,6 +179,7 @@ function isStorageExist() /* boolean */ {
 
 document.addEventListener(SAVED_EVENT, function () {
     console.log(localStorage.getItem(STORAGE_KEY));
+    alert("Data anda berhasil terismpan");
 });
 
 function loadDataFromStorage() {
