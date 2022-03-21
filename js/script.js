@@ -25,6 +25,7 @@ function addTodo() {
 
     document.dispatchEvent(new Event(RENDER_EVENT));
     saveData();
+    alert("Data anda berhasil terismpan");
 }
 
 function generateId() {
@@ -133,6 +134,7 @@ function removeTaskFromCompleted(todoId) {
 
     document.dispatchEvent(new Event(RENDER_EVENT));
     saveData();
+    alert("Data anda berhasil dihapus");
 }
 
 
@@ -179,7 +181,6 @@ function isStorageExist() /* boolean */ {
 
 document.addEventListener(SAVED_EVENT, function () {
     console.log(localStorage.getItem(STORAGE_KEY));
-    alert("Data anda berhasil terismpan");
 });
 
 function loadDataFromStorage() {
